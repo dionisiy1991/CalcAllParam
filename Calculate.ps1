@@ -1,10 +1,9 @@
+$name = Read-Host "input your name"
+$surname = Read-Host "input your surname"
 [CmdletBinding()]
 param (
-    [int]
-    $number1,
-    [int]
-    $number2
+    [String]
+    $name,
+    [String]
+    $surname
 )
-
-$sum = $number1*$number1-2*$number1*$number2+$number2*$number2
-$sum | Out-File -FilePath "D:\FileForJenkins\File.txt"
